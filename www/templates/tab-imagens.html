@@ -1,0 +1,12 @@
+<ion-view view-title="Imagens">
+  <ion-content>
+    <div class="row" style="flex-wrap: wrap;">
+      <a class="col col-50"  
+         ng-repeat="(nome, url) in imagens" 
+         ng-href="#/tab/imagens/{{ nome }}" 
+         style="padding: 0 2px">
+        <img ng-src="{{ url }}" style="width: 100%">
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
